@@ -1,9 +1,9 @@
-# S2RDCast
+# WHIRLD
 
 The main implementation is organized as follows:
 
 - `models/simht.py`: deterministic SimHT predictor and HTBlock.
-- `S2RDCast.py`: wavelet residual dynamical diffusion, DWUNet, and recurrent wavelet context.
+- `WHIRLD.py`: wavelet residual dynamical diffusion, DWUNet, and recurrent wavelet context.
 - `datasets/`: dataset loaders and evaluation visualizations.
 - `run.py`: training and evaluation entry point.
 
@@ -11,7 +11,7 @@ The main implementation is organized as follows:
 
 ```bash
 conda env create -f environment.yml
-conda activate S2RDCast
+conda activate WHIRLD
 ```
 
 ## Data
@@ -23,7 +23,7 @@ The experiments use SEVIR, MeteoNet, Shanghai Radar, and CIKM Radar. Download ea
 - [Shanghai Radar](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/2GKMQJ)
 - [CIKM Radar](https://tianchi.aliyun.com/dataset/1085)
 
-Alternatively, set `S2RDCast_DATA_ROOT` and use the default names:
+Alternatively, set `WHIRLD_DATA_ROOT` and use the default names:
 
 ```text
 data/
@@ -35,7 +35,7 @@ data/
 
 ## Training
 
-The following example trains S2RDCast on MeteoNet:
+The following example trains WHIRLD on MeteoNet:
 
 ```bash
 python run.py \
